@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1> Что я изучаю по HTML </h1>
+<h2> Основной код пишем в теге body, тут размера h2 </h2>
+<h3>можно меньше h3 </h3>
+<h4>еще меньше h4 </h4>
+<h5>маленькими буквами h5 </h5>
+<h6> и самыми маленькими h6 </h6>
+
+<div>
+    Этот текст написан в теге div. а дальше будем делать маркированный
+    список ul и li. каждый элемент списка должен
+    начинаться с тега li. Элемент li наследует свойства lu.
+</div>
+<ul>
+    <li> перевый элемент li, они должны быть внутри элемента ul элемента </li>
+    <li> 2 элемент li  </li>
+    <li> 3 элемент li  </li>
+    <li> 4 элемент li  </li>
+</ul>
+<ul type="disc">
+    <li> еще можно менять маркер в html  </li>
+</ul>
+<ul type="circle">
+    <li>но потом я научусь делать это все в css </li>
+</ul>
+<ul type="square">
+    <li> наверно это будет легче</li>
+</ul>
+<p>тут я написал все в теге параграфе. еще бывают списки нумерованные.
+все тоже самое, только ul заменить на ol </p>
+<ol start="2">
+    <li> элемент номерация началась с 2 - это атрибус start  </li>
+    <li> элемент </li>
+</ol>
+<ol type="I" reversed  >
+    <li> и даже тактоже можно делать</li>
+    <li>  римские цифры,  </li>
+    <li>а что бы наоборот писались номера атрибут reversed </li>
+</ol>
+<a href="https://t.me/Sannny19" target="_blank"> это ссылка  на телеграмм </a>
+<div> по умолчанию target работает в режиме _self, что бы не уходить
+    со странички нужно ставить _blank </div>
+<hr align="central" color="red" noshade="" size="5px" width="50%">
+<hr align="central" color="red" size="5px" width="50%">
+<hr width="300">
+<hr noshade width="300">
+<p>эта полоска сделана тегом hr ее можно править 5 атрибутами align - выравнивание,
+    color - цвет, noshade - без 3д эфектов, типа без тени, size - размеер, width - ширина</p>
+<img src="https://www.imgonline.com.ua/examples/bee-on-daisy.jpg" alt="картинка" width="50%">
+<div>
+    Картинки встравлять можно тегом img. если ты норм программист в alt пиши текст, с картинкой много варантов атрибутов
+</div>
+<p></p>
+<table cellspacing="15" cellpadding="20" border="1">
+
+    <tbody  align="right" style="background: silver">
+    <tr>
+        <td colspan="2">Ячейка TBODY</td>
+    </tr>
+    </tbody>
+
+    <tr>
+        <td rowspan="3"> A1,не слилась с А2, она подвинул ячейку А2 вправо.
+        Ячейки tbody и tfoot A1 не двигает</td>
+        <td> B1 </td>
+        <td colspan="2"> C1 </td>
+    </tr>
+    <tr>
+        <td> A2 </td>
+        <td> B2 </td>
+        <td> C2 </td>
+        <td> D2 </td>
+    </tr>
+    <tr>
+        <td> A3 </td>
+        <td> B3 </td>
+        <td> C3 </td>
+        <td> D3 </td>
+    </tr>
+    <tfoot align="center" style="background: #ffc">
+    <tr>
+        <td colspan="4">Ячейка TFOOT</td>
+    </tr>
+    </tfoot>
+</table>
+<p></p>
+<hr>
+<p></p>
+<div>
+    <h3>сейчас много будет тега input </h3>
+</div>
+<hr>
+
+
+<hr>
+флажки выбираем БОЛЬШЕ 1, можно и 1
+<p>
+
+    <input type="checkbox" name="drink" value="rad1"> Пиво<Br>
+    <input type="checkbox" name="drink" value="rad2"> Чай<Br>
+    <input type="checkbox" name="drink" value="rad3"> Кофе</p>
+<hr>
+<p>
+    <input type="file" name="" id=""> добавить файл
+</p>
+<p>
+    <input type="hidden" name="" id=""> скрытое поле. Зачем?
+</p>
+<p>
+    <input type="image" name="" id=""> изображение. Разница между файлом? проверка на тип документа?
+</p>
+<p>
+    <input type="password" name="" id="" placeholder="введите пароь"> пароль, текст скрыт ***
+</p>
+<hr>
+переключатель. выбираем только 1 вариант.
+<p><input type="radio" name="drink2" value="rad1"> Пиво<Br>
+    <input type="radio" name="drink2" value="rad2"> Чай<Br>
+    <input type="radio" name="drink2" value="rad3"> Кофе</p>
+<hr>
+<p>
+    <input type="reset" name="" id=""> сброс всего что вводил
+</p>
+<p>
+    <input type="submit" name="" id=""> отправка данных на сервер
+</p>
+<p> ввод текста, нажми на <label for="name123"> текст </label> , for и id связаны
+    <input type="text" name="" id="name123" >
+    </p>
+<p>
+    <input type="color" name="" id=""> Виджет для выбора цвета.
+</p>
+<p>
+    <input type="date" name="" id="">  ввод даты
+</p>
+<p>
+    <input type="datetime" name="" id=""> ? не понятно какая дата
+</p>
+<p>
+    <input type="datetime-local" name="" id=""> ввод даты и временни
+</p>
+<p>
+    <input type="email" name="" id=""> почта? какая разница от text
+</p>
+<p>
+    <input type="number" name="" id=""> цифры
+</p>
+<p>
+    <input type="range" min="0" max="10" name="" id="">  Ползунок для выбора чисел в указанном диапазоне.
+</p>
+<p>
+    <input type="search" name="" id=""> поисковик
+</p>
+<p>
+    <input type="tel" name="" id=""> телефон, ? разница почта и текст?
+</p>
+<p>
+    <input type="time" name="" id=""> время в РМ АМ
+</p>
+<p>
+    <input type="url" name="" id=""> ссылка
+</p>
+<p>
+    <input type="month" name="" id=""> ввод год и месяц
+</p>
+<p>
+    <input type="week" name="" id=""> выбор номера недели 7 дней
+</p>
+<br>
+<form action="/"> <!--запускает процесс\скрипт\на сервер и т.д.-->
+    <label for="text"> ваш текcт</label>
+    <textarea id="text" ></textarea>
+    <p>
+        <input type="button" name="" id="" value="кнопка"> это кнопка
+    </p>
+</form>
+
+</body>
+</html>
